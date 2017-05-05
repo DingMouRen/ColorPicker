@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    >
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img_hue"
+        android:layout_width="20dp"
+        android:layout_height="240dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/color_plate"
+        android:scaleType="fitXY"
+        android:src="@drawable/hue_list"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_alpha_bottom"
+        android:layout_width="20dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/color_plate"
+        android:scaleType="fitXY"
+        android:src="@drawable/alpha_bottom_drawable"
+        />
+
+
+    <View
+        android:id="@+id/view_overlay"
+        android:layout_width="20dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/color_plate"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color_plate"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/alpha_bottom_drawable"
+            android:layout_toLeftOf="@+id/color_arrow"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+
+        <View
+            android:id="@+id/view_old_color"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#faa"
+            android:layout_toLeftOf="@+id/color_arrow"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+
+        <ImageView
+            android:id="@+id/color_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/color_arrow"
+            android:layout_centerInParent="true"
+            />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/alpha_bottom_drawable"
+            android:layout_toRightOf="@+id/color_arrow"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+            />
+
+        <View
+            android:id="@+id/view_new_color"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#aaf"
+            android:layout_toRightOf="@+id/color_arrow"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/hue_cursor"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:scaleType="matrix"
+        android:src="@drawable/cursor"/>
+
+    <ImageView
+        android:id="@+id/alpha_Cursor"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:scaleType="matrix"
+        android:src="@drawable/cursor"/>
+
+
+    <com.dingmouren.colorpicker.ColorPlateView
+        android:id="@+id/color_plate"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/plate_cursor"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:scaleType="matrix"
+        android:src="@drawable/img_plate_cursor"/>
+
+</RelativeLayout>
