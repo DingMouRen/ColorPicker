@@ -5,8 +5,9 @@
     <dimen name="hsv_height">240dp</dimen>
     <dimen name="hsv_width">240dp</dimen>
     <dimen name="hue_width">30dp</dimen>
-    <dimen name="spacer">8dp</dimen>
     <dimen name="show_width">60dp</dimen>
     <dimen name="show_height">30dp</dimen>
+    <dimen name="space">10dp</dimen>
+    <dimen name="hue_alpha_width">20dp</dimen>
 
 </resources>

@@ -7,12 +7,12 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -23,11 +23,6 @@ import android.widget.RelativeLayout;
 public class ColorPickerDialog {
     private static final String TAG = ColorPickerDialog.class.getName();
 
-    public interface OnColorPickerListener{
-        void onColorCancel(ColorPickerDialog dialog);
-        void onColorChange(ColorPickerDialog dialog,int color);
-        void onColorConfirm(ColorPickerDialog dialog,int color);
-    }
     private  AlertDialog mAlertDialog;
     private final boolean mIsSupportAlpha;
     private final OnColorPickerListener mListener;
@@ -315,6 +310,15 @@ public class ColorPickerDialog {
         mViewAlphaOverlay.setBackgroundDrawable(gd);
     }
 
+    public void setButtonTextColor(int color){
+        if (mAlertDialog != null) {
+            Button btnPositive = mAlertDialog.getButton(android.app.AlertDialog.BUTTON_POSITIVE);
+            Button btnNegative = mAlertDialog.getButton(android.app.AlertDialog.BUTTON_NEGATIVE);
+            btnPositive.setTextColor(color);
+            btnNegative.setTextColor(color);
+        }
+    }
+
     private void setAlpha(int alpha){
         this.mAlpha = alpha;
     }
@@ -323,8 +327,9 @@ public class ColorPickerDialog {
         return mAlpha;
     }
 
-    public void show(){
+    public ColorPickerDialog show(){
         mAlertDialog.show();
+        return ColorPickerDialog.this;
     }
 
     public AlertDialog getDialog(){
