@@ -1,6 +1,6 @@
 # ColorPicker
 
-ColorPicker是一款为android项目提供的取色器。Enjoy it  O(∩_∩)O<br><br>
+ColorPicker是一款为android项目提供的取色器,并且支持获取带有透明度的颜色哦。Enjoy it  O(∩_∩)O<br><br>
 
 ![img](https://github.com/DingMouRen/ColorPicker/raw/master/imgs/img.gif)<br><br>
 
