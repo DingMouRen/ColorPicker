@@ -14,14 +14,19 @@ ColorPicker是一款为android项目提供的取色器。Enjoy it  O(∩_∩)O<br><br>
 	
 ```
 	 private boolean supportAlpha;//是否支持透明度
-	  /**
+	 /**
        * 创建支持透明度的取色器
        * @param context 宿主Activity
        * @param defauleColor 默认的颜色
        * @param isSupportAlpha 颜色是否支持透明度
        * @param listener 取色器的监听器
        */
-	   ColorPickerDialog mColorPickerDialog = new ColorPickerDialog(MainActivity.this,getResources().getColor(R.color.colorPrimary),supportAlpha,mOnColorPickerListener).show();
+	   ColorPickerDialog mColorPickerDialog = new ColorPickerDialog(
+	   MainActivity.this,
+	   getResources().getColor(R.color.colorPrimary),
+	   supportAlpha,
+	   mOnColorPickerListener
+	   ).show();
 	 
 	 //取色器的监听器
 	 private OnColorPickerListener mOnColorPickerListener = new OnColorPickerListener() {
