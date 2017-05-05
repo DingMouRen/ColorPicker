@@ -51,10 +51,10 @@ public class ColorPickerDialog {
 
     /**
      * 创建支持透明度的取色器
-     * @param context
-     * @param defauleColor
-     * @param isSupportAlpha
-     * @param listener
+     * @param context 宿主Activity
+     * @param defauleColor 默认的颜色
+     * @param isSupportAlpha 颜色是否支持透明度
+     * @param listener 取色器的监听器
      */
     public ColorPickerDialog(final Context context,int defauleColor,boolean isSupportAlpha ,OnColorPickerListener listener){
         this.mIsSupportAlpha = isSupportAlpha;

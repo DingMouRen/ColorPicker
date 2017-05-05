@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar mToolbar;
     private Button mButton;
     private ColorPickerDialog mColorPickerDialog;
-    private boolean supportAlpha;
+    private boolean supportAlpha;//颜色是否支持透明度
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
