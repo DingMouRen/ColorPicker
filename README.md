@@ -46,7 +46,8 @@ ColorPicker是一款为android项目提供的取色器。Enjoy it  O(∩_∩)O<br><br>
         }
     };
 ```
-	3.注意：本控件支持修改“确定” “取消”按钮文本的颜色，必须是在ColorPicker.show()之后，调用setButtonTextColor(int color)来设定。<br><br><br><br><br>
+	3.注意：本控件支持修改“确定” “取消”按钮文本的颜色，必须是在ColorPicker.show()之后，
+	  调用setButtonTextColor(int color)来设定。
 	
 	
 	
