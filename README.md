@@ -1,3 +1,5 @@
+![imgbanner](https://github.com/DingMouRen/ColorPicker/raw/master/imgs/banner.png)
+
 # ColorPicker
 
 ColorPicker是一款为android项目提供的取色器,并且支持获取带有透明度的颜色哦。Enjoy it  O(∩_∩)O<br>
@@ -8,11 +10,11 @@ ColorPicker是一款为android项目提供的取色器,并且支持获取带有透明度的颜色哦。Enjoy
 
 # 使用方法
 
-	1.在modle的build.gradle中添加引用
+###	1.在modle的build.gradle中添加引用
 ```
 compile 'com.dingmouren.colorpicker:colorpicker:1.0.1'
 ```
-	2.代码中使用
+###	2.代码中使用
 	
 ```
 private boolean supportAlpha;//是否支持透明度
@@ -48,8 +50,7 @@ private OnColorPickerListener mOnColorPickerListener = new OnColorPickerListener
         }
     };
 ```
-	3.注意：本控件支持修改“确定” “取消”按钮文本的颜色，必须是在ColorPicker.show()之后，
-	  调用setButtonTextColor(int color)来设定。
+###	3.注意：本控件支持修改“确定” “取消”按钮文本的颜色，必须是在ColorPicker.show()之后，调用setButtonTextColor(int color)来设定。
 	
 	
 	
