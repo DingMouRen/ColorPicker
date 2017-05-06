@@ -1,4 +1,4 @@
-![imgbanner](https://github.com/DingMouRen/ColorPicker/raw/master/imgs/banner.png)
+![imgbanner](https://github.com/DingMouRen/ColorPicker/raw/master/imgs/imgbanner.png)
 
 # ColorPicker
 
